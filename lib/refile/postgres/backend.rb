@@ -6,7 +6,7 @@ module Refile
       RegistryTableDoesNotExistError = Class.new(StandardError)
       DEFAULT_REGISTRY_TABLE = "refile_attachments"
       DEFAULT_NAMESPACE = "default"
-      PG_LARGE_OBJECT_TABLE = "pg_largeobject"
+      PG_LARGE_OBJECT_TABLE = "pg_largeobject_metadata"
       READ_CHUNK_SIZE = 3000
       INIT_CONNECTION_ARG_ERROR_MSG = "When initializing new Refile::Postgres::Backend first argument should be an instance of PG::Connection or a lambda/proc that returns it. When using ActiveRecord it is available as ActiveRecord::Base.connection.raw_connection"
 
